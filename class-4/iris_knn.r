@@ -13,11 +13,11 @@ data$Species <- NULL        # remove labels from feature set (note: could
 #################################################
 # TRAIN/TEST SPLIT
 #################################################
-
+  
 set.seed(1)         # initialize random seed for consistency
                     # NOTE -- run for various seeds --> need for CV!
 
-train.pct <- 0.7    # pct of data to use for training set
+train.pct <- 0.7   # pct of data to use for training set
 N <- nrow(data)     # total number of records (150)
 
 train.index <- sample(1:N, train.pct * N)       # random sample of records (training set)
